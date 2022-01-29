@@ -1,3 +1,8 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -79,9 +84,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  vscode
   zsh-autosuggestions
   zsh-syntax-highlighting
+  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -120,3 +125,9 @@ export PATH=/Users/Shared/Android/sdk/tools:$PATH
 export PATH=/Users/Shared/Android/sdk/platform-tools:$PATH
 
 
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
